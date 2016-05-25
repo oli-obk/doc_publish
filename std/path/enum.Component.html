@@ -59,13 +59,13 @@
 <p>See the module documentation for an in-depth explanation of components and
 their role in the API.</p>
 </div><h2 class='variants'>Variants</h2>
-<span id='variant.Prefix'><code>Prefix(<a class='struct' href='../../std/path/struct.PrefixComponent.html' title='std::path::PrefixComponent'>PrefixComponent</a>&lt;'a&gt;)</code></span><div class='docblock'><p>A Windows path prefix, e.g. <code>C:</code> or <code>\\server\share</code>.</p>
+<span id='variant.Prefix' class='variant'><code>Prefix(<a class='struct' href='../../std/path/struct.PrefixComponent.html' title='std::path::PrefixComponent'>PrefixComponent</a>&lt;'a&gt;)</code></span><div class='docblock'><p>A Windows path prefix, e.g. <code>C:</code> or <code>\\server\share</code>.</p>
 
 <p>Does not occur on Unix.</p>
-</div><span id='variant.RootDir'><code>RootDir</code></span><div class='docblock'><p>The root directory component, appears after any prefix and before anything else</p>
-</div><span id='variant.CurDir'><code>CurDir</code></span><div class='docblock'><p>A reference to the current directory, i.e. <code>.</code></p>
-</div><span id='variant.ParentDir'><code>ParentDir</code></span><div class='docblock'><p>A reference to the parent directory, i.e. <code>..</code></p>
-</div><span id='variant.Normal'><code>Normal(&amp;'a <a class='struct' href='../../std/ffi/struct.OsStr.html' title='std::ffi::OsStr'>OsStr</a>)</code></span><div class='docblock'><p>A normal component, i.e. <code>a</code> and <code>b</code> in <code>a/b</code></p>
+</div><span id='variant.RootDir' class='variant'><code>RootDir</code></span><div class='docblock'><p>The root directory component, appears after any prefix and before anything else</p>
+</div><span id='variant.CurDir' class='variant'><code>CurDir</code></span><div class='docblock'><p>A reference to the current directory, i.e. <code>.</code></p>
+</div><span id='variant.ParentDir' class='variant'><code>ParentDir</code></span><div class='docblock'><p>A reference to the parent directory, i.e. <code>..</code></p>
+</div><span id='variant.Normal' class='variant'><code>Normal(&amp;'a <a class='struct' href='../../std/ffi/struct.OsStr.html' title='std::ffi::OsStr'>OsStr</a>)</code></span><div class='docblock'><p>A normal component, i.e. <code>a</code> and <code>b</code> in <code>a/b</code></p>
 </div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a&gt; <a class='enum' href='../../std/path/enum.Component.html' title='std::path::Component'>Component</a>&lt;'a&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7308' class='srclink' href='../../src/std/src/libstd/path.rs.html#556-568' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.as_os_str' class='method'><code>fn <a href='#method.as_os_str' class='fnname'>as_os_str</a>(self) -&gt; &amp;'a <a class='struct' href='../../std/ffi/struct.OsStr.html' title='std::ffi::OsStr'>OsStr</a></code></h4>
 <div class='docblock'><p>Extracts the underlying <code>OsStr</code> slice</p>

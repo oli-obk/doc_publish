@@ -137,11 +137,6 @@ code, pre {
 .docblock pre code {
     padding: 0;
 }
-
-.docblock {
-    padding-left: 24px;
-}
-
 pre {
     padding: 14px;
 }
@@ -269,6 +264,10 @@ nav.sub {
 .docblock h1 { font-size: 1.3em; }
 .docblock h2 { font-size: 1.15em; }
 .docblock h3, .docblock h4, .docblock h5 { font-size: 1em; }
+
+.docblock {
+    padding-left: 24px;
+}
 
 .content .out-of-band {
     font-size: 23px;
@@ -596,6 +595,7 @@ a.test-arrow {
 .collapse-toggle {
     font-weight: 300;
     position: absolute;
+    left: -23px;
     color: #999;
     top: 0;
 }

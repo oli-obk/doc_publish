@@ -54,9 +54,9 @@
     UnsafeFnPointer,
     Unsize,
 }</pre><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><h2 class='variants'>Variants</h2>
-<span id='variant.Misc'><code>Misc</code></span><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><span id='variant.ReifyFnPointer'><code>ReifyFnPointer</code></span><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><div class='docblock'><p>Convert unique, zero-sized type for a fn to fn()</p>
-</div><span id='variant.UnsafeFnPointer'><code>UnsafeFnPointer</code></span><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><div class='docblock'><p>Convert safe fn() to unsafe fn()</p>
-</div><span id='variant.Unsize'><code>Unsize</code></span><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><div class='docblock'><p>&quot;Unsize&quot; -- convert a thin-or-fat pointer to a fat pointer.
+<span id='variant.Misc' class='variant'><code>Misc</code></span><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><span id='variant.ReifyFnPointer' class='variant'><code>ReifyFnPointer</code></span><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><div class='docblock'><p>Convert unique, zero-sized type for a fn to fn()</p>
+</div><span id='variant.UnsafeFnPointer' class='variant'><code>UnsafeFnPointer</code></span><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><div class='docblock'><p>Convert safe fn() to unsafe fn()</p>
+</div><span id='variant.Unsize' class='variant'><code>Unsize</code></span><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><div class='docblock'><p>&quot;Unsize&quot; -- convert a thin-or-fat pointer to a fat pointer.
 trans must figure out the details once full monomorphization
 is known. For example, this could be used to cast from a
 <code>&amp;[i32;N]</code> to a <code>&amp;[i32]</code>, or a <code>Box&lt;T&gt;</code> to a <code>Box&lt;Trait&gt;</code>

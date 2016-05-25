@@ -1,5 +1,5 @@
 (function() {var implementors = {};
-implementors["rustc_data_structures"] = [];implementors["rustc_trans"] = [];
+implementors["rustc_data_structures"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

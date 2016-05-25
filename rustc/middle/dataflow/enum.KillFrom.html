@@ -56,11 +56,11 @@ takes effect only when control flows directly through the node in
 question, or if the kill&#39;s effect is associated with any
 control-flow directly through or indirectly over the node.</p>
 </div><h2 class='variants'>Variants</h2>
-<span id='variant.ScopeEnd'><code>ScopeEnd</code></span><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><div class='docblock'><p>A <code>ScopeEnd</code> kill is one that takes effect when any control
+<span id='variant.ScopeEnd' class='variant'><code>ScopeEnd</code></span><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><div class='docblock'><p>A <code>ScopeEnd</code> kill is one that takes effect when any control
 flow goes over the node. A kill associated with the end of the
 scope of a variable declaration <code>let x;</code> is an example of a
 <code>ScopeEnd</code> kill.</p>
-</div><span id='variant.Execution'><code>Execution</code></span><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><div class='docblock'><p>An <code>Execution</code> kill is one that takes effect only when control
+</div><span id='variant.Execution' class='variant'><code>Execution</code></span><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><div class='docblock'><p>An <code>Execution</code> kill is one that takes effect only when control
 flow goes through the node to completion. A kill associated
 with an assignment statement <code>x = expr;</code> is an example of an
 <code>Execution</code> kill.</p>

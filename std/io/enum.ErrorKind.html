@@ -73,22 +73,22 @@
 <p>This list is intended to grow over time and it is not recommended to
 exhaustively match against it.</p>
 </div><h2 class='variants'>Variants</h2>
-<span id='variant.NotFound'><code>NotFound</code></span><div class='docblock'><p>An entity was not found, often a file.</p>
-</div><span id='variant.PermissionDenied'><code>PermissionDenied</code></span><div class='docblock'><p>The operation lacked the necessary privileges to complete.</p>
-</div><span id='variant.ConnectionRefused'><code>ConnectionRefused</code></span><div class='docblock'><p>The connection was refused by the remote server.</p>
-</div><span id='variant.ConnectionReset'><code>ConnectionReset</code></span><div class='docblock'><p>The connection was reset by the remote server.</p>
-</div><span id='variant.ConnectionAborted'><code>ConnectionAborted</code></span><div class='docblock'><p>The connection was aborted (terminated) by the remote server.</p>
-</div><span id='variant.NotConnected'><code>NotConnected</code></span><div class='docblock'><p>The network operation failed because it was not connected yet.</p>
-</div><span id='variant.AddrInUse'><code>AddrInUse</code></span><div class='docblock'><p>A socket address could not be bound because the address is already in
+<span id='variant.NotFound' class='variant'><code>NotFound</code></span><div class='docblock'><p>An entity was not found, often a file.</p>
+</div><span id='variant.PermissionDenied' class='variant'><code>PermissionDenied</code></span><div class='docblock'><p>The operation lacked the necessary privileges to complete.</p>
+</div><span id='variant.ConnectionRefused' class='variant'><code>ConnectionRefused</code></span><div class='docblock'><p>The connection was refused by the remote server.</p>
+</div><span id='variant.ConnectionReset' class='variant'><code>ConnectionReset</code></span><div class='docblock'><p>The connection was reset by the remote server.</p>
+</div><span id='variant.ConnectionAborted' class='variant'><code>ConnectionAborted</code></span><div class='docblock'><p>The connection was aborted (terminated) by the remote server.</p>
+</div><span id='variant.NotConnected' class='variant'><code>NotConnected</code></span><div class='docblock'><p>The network operation failed because it was not connected yet.</p>
+</div><span id='variant.AddrInUse' class='variant'><code>AddrInUse</code></span><div class='docblock'><p>A socket address could not be bound because the address is already in
 use elsewhere.</p>
-</div><span id='variant.AddrNotAvailable'><code>AddrNotAvailable</code></span><div class='docblock'><p>A nonexistent interface was requested or the requested address was not
+</div><span id='variant.AddrNotAvailable' class='variant'><code>AddrNotAvailable</code></span><div class='docblock'><p>A nonexistent interface was requested or the requested address was not
 local.</p>
-</div><span id='variant.BrokenPipe'><code>BrokenPipe</code></span><div class='docblock'><p>The operation failed because a pipe was closed.</p>
-</div><span id='variant.AlreadyExists'><code>AlreadyExists</code></span><div class='docblock'><p>An entity already exists, often a file.</p>
-</div><span id='variant.WouldBlock'><code>WouldBlock</code></span><div class='docblock'><p>The operation needs to block to complete, but the blocking operation was
+</div><span id='variant.BrokenPipe' class='variant'><code>BrokenPipe</code></span><div class='docblock'><p>The operation failed because a pipe was closed.</p>
+</div><span id='variant.AlreadyExists' class='variant'><code>AlreadyExists</code></span><div class='docblock'><p>An entity already exists, often a file.</p>
+</div><span id='variant.WouldBlock' class='variant'><code>WouldBlock</code></span><div class='docblock'><p>The operation needs to block to complete, but the blocking operation was
 requested to not occur.</p>
-</div><span id='variant.InvalidInput'><code>InvalidInput</code></span><div class='docblock'><p>A parameter was incorrect.</p>
-</div><span id='variant.InvalidData'><code>InvalidData</code></span><div class='docblock'><p>Data not valid for the operation were encountered.</p>
+</div><span id='variant.InvalidInput' class='variant'><code>InvalidInput</code></span><div class='docblock'><p>A parameter was incorrect.</p>
+</div><span id='variant.InvalidData' class='variant'><code>InvalidData</code></span><div class='docblock'><p>Data not valid for the operation were encountered.</p>
 
 <p>Unlike <code>InvalidInput</code>, this typically means that the operation
 parameters were valid, however the error was caused by malformed
@@ -96,18 +96,18 @@ input data.</p>
 
 <p>For example, a function that reads a file into a string will error with
 <code>InvalidData</code> if the file&#39;s contents are not valid UTF-8.</p>
-</div><div class='since' title='Stable since Rust version 1.2.0'>1.2.0</div><span id='variant.TimedOut'><code>TimedOut</code></span><div class='docblock'><p>The I/O operation&#39;s timeout expired, causing it to be canceled.</p>
-</div><span id='variant.WriteZero'><code>WriteZero</code></span><div class='docblock'><p>An error returned when an operation could not be completed because a
+</div><div class='since' title='Stable since Rust version 1.2.0'>1.2.0</div><span id='variant.TimedOut' class='variant'><code>TimedOut</code></span><div class='docblock'><p>The I/O operation&#39;s timeout expired, causing it to be canceled.</p>
+</div><span id='variant.WriteZero' class='variant'><code>WriteZero</code></span><div class='docblock'><p>An error returned when an operation could not be completed because a
 call to <code>write</code> returned <code>Ok(0)</code>.</p>
 
 <p>This typically means that an operation could only succeed if it wrote a
 particular number of bytes but only a smaller number of bytes could be
 written.</p>
-</div><span id='variant.Interrupted'><code>Interrupted</code></span><div class='docblock'><p>This operation was interrupted.</p>
+</div><span id='variant.Interrupted' class='variant'><code>Interrupted</code></span><div class='docblock'><p>This operation was interrupted.</p>
 
 <p>Interrupted operations can typically be retried.</p>
-</div><span id='variant.Other'><code>Other</code></span><div class='docblock'><p>Any I/O error not part of this list.</p>
-</div><span id='variant.UnexpectedEof'><code>UnexpectedEof</code></span><div class='docblock'><p>An error returned when an operation could not be completed because an
+</div><span id='variant.Other' class='variant'><code>Other</code></span><div class='docblock'><p>Any I/O error not part of this list.</p>
+</div><span id='variant.UnexpectedEof' class='variant'><code>UnexpectedEof</code></span><div class='docblock'><p>An error returned when an operation could not be completed because an
 &quot;end of file&quot; was reached prematurely.</p>
 
 <p>This typically means that an operation could only succeed if it read a
