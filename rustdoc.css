@@ -269,6 +269,17 @@ nav.sub {
     padding-left: 24px;
 }
 
+.enum > .toggle-wrapper + .docblock, .struct > .toggle-wrapper > .collapse-toggle {
+    left: 0;
+    margin-top: 5px;
+}
+
+.enum > .toggle-wrapper + .docblock, .struct > .toggle-wrapper + .docblock {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
 .content .out-of-band {
     font-size: 23px;
     margin: 0px;
