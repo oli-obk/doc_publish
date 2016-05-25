@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["elaborate_predicates",""],["supertrait_def_ids",""],["supertraits",""],["transitive_bounds",""]],"struct":[["SupertraitDefIds",""]],"type":[["Supertraits",""]]});
