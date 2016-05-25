@@ -269,7 +269,7 @@ nav.sub {
     padding-left: 24px;
 }
 
-.enum > .toggle-wrapper + .docblock, .struct > .toggle-wrapper > .collapse-toggle {
+.enum > .toggle-wrapper > .collapse-toggle, .struct > .toggle-wrapper > .collapse-toggle {
     left: 0;
     margin-top: 5px;
 }
