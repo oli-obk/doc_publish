@@ -534,7 +534,6 @@ em.stab p {
 
 .variants_table tbody tr td:first-child {
     width: 1%; /* make the variant name as small as possible */
-    text-align: right;
 }
 
 td.summary-column {

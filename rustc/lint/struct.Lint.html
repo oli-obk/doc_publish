@@ -54,8 +54,8 @@
     pub desc: &amp;'static <a class='primitive' href='../../std/primitive.str.html'>str</a>,
 }</pre><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><div class='docblock'><p>Specification of a single lint.</p>
 </div><h2 class='fields'>Fields</h2>
-<table><tr class='stab unstable'>
-                             <td id='structfield.name'><code>name: &amp;'static <a class='primitive' href='../../std/primitive.str.html'>str</a></code></td><td><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><div class='docblock'><p>A string identifier for the lint.</p>
+<span id='structfield.name'><code>name: &amp;'static <a class='primitive' href='../../std/primitive.str.html'>str</a></code></span>
+                           <span class='stab unstable'></span><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><div class='docblock'><p>A string identifier for the lint.</p>
 
 <p>This identifies the lint in attributes and in command-line arguments.
 In those contexts it is always lowercase, but this field is compared
@@ -65,13 +65,13 @@ statics without repeating the name.</p>
 
 <p>The name is written with underscores, e.g. &quot;unused_imports&quot;.
 On the command line, underscores become dashes.</p>
-</div></td></tr><tr class='stab unstable'>
-                             <td id='structfield.default_level'><code>default_level: <a class='enum' href='../../rustc/lint/enum.Level.html' title='rustc::lint::Level'>Level</a></code></td><td><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><div class='docblock'><p>Default level for the lint.</p>
-</div></td></tr><tr class='stab unstable'>
-                             <td id='structfield.desc'><code>desc: &amp;'static <a class='primitive' href='../../std/primitive.str.html'>str</a></code></td><td><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><div class='docblock'><p>Description of the lint or the issue it detects.</p>
+</div><span id='structfield.default_level'><code>default_level: <a class='enum' href='../../rustc/lint/enum.Level.html' title='rustc::lint::Level'>Level</a></code></span>
+                           <span class='stab unstable'></span><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><div class='docblock'><p>Default level for the lint.</p>
+</div><span id='structfield.desc'><code>desc: &amp;'static <a class='primitive' href='../../std/primitive.str.html'>str</a></code></span>
+                           <span class='stab unstable'></span><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><div class='docblock'><p>Description of the lint or the issue it detects.</p>
 
 <p>e.g. &quot;imports that are never used&quot;</p>
-</div></td></tr></table><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class='struct' href='../../rustc/lint/struct.Lint.html' title='rustc::lint::Lint'>Lint</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-24038' class='srclink' href='../../src/rustc/src/librustc/lint/mod.rs.html#70-75' title='goto source code'>[src]</a></span></h3>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class='struct' href='../../rustc/lint/struct.Lint.html' title='rustc::lint::Lint'>Lint</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-24038' class='srclink' href='../../src/rustc/src/librustc/lint/mod.rs.html#70-75' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.name_lower' class='method'><code>fn <a href='#method.name_lower' class='fnname'>name_lower</a>(&amp;self) -&gt; <a class='struct' href='../../collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
 <div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><div class='docblock'><p>Get the lint&#39;s name, with ASCII letters converted to lowercase.</p>
 </div></div><h2 id='implementations'>Trait Implementations</h2><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../../core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../../rustc/lint/struct.Lint.html' title='rustc::lint::Lint'>Lint</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-24023' class='srclink' href='../../src/rustc/src/librustc/lint/mod.rs.html#47' title='goto source code'>[src]</a></span></h3>

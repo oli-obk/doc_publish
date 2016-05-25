@@ -90,9 +90,9 @@ fn abs_all(input: &amp;mut Cow&lt;[i32]&gt;) {
     }
 }</pre>
 </div><h2 class='variants'>Variants</h2>
-<table class='variants_table'><tr><td id='variant.Borrowed'><code>Borrowed</code></td><td><code>(&amp;'a B)</code></td></tr><tr><td>&nbsp;</td><td><div class='docblock'><p>Borrowed data.</p>
-</div></td><td></td></tr><tr><td id='variant.Owned'><code>Owned</code></td><td><code>(B::Owned)</code></td></tr><tr><td>&nbsp;</td><td><div class='docblock'><p>Owned data.</p>
-</div></td><td></td></tr></table><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbspB:&nbsp?<a class='trait' href='../../core/marker/trait.Sized.html' title='core::marker::Sized'>Sized</a>&gt; <a class='enum' href='../../collections/borrow/enum.Cow.html' title='collections::borrow::Cow'>Cow</a>&lt;'a,&nbsp;B&gt; <span class='where'>where B: <a class='trait' href='../../collections/borrow/trait.ToOwned.html' title='collections::borrow::ToOwned'>ToOwned</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2207' class='srclink' href='../../src/collections/src/libcollections/borrow.rs.html#132-181' title='goto source code'>[src]</a></span></h3>
+<span id='variant.Borrowed'><code>Borrowed(&amp;'a B)</code></span><div class='docblock'><p>Borrowed data.</p>
+</div><span id='variant.Owned'><code>Owned(B::Owned)</code></span><div class='docblock'><p>Owned data.</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbspB:&nbsp?<a class='trait' href='../../core/marker/trait.Sized.html' title='core::marker::Sized'>Sized</a>&gt; <a class='enum' href='../../collections/borrow/enum.Cow.html' title='collections::borrow::Cow'>Cow</a>&lt;'a,&nbsp;B&gt; <span class='where'>where B: <a class='trait' href='../../collections/borrow/trait.ToOwned.html' title='collections::borrow::ToOwned'>ToOwned</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2207' class='srclink' href='../../src/collections/src/libcollections/borrow.rs.html#132-181' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.to_mut' class='method'><code>fn <a href='#method.to_mut' class='fnname'>to_mut</a>(&amp;mut self) -&gt; &amp;mut B::Owned</code></h4>
 <div class='docblock'><p>Acquires a mutable reference to the owned form of the data.</p>
 

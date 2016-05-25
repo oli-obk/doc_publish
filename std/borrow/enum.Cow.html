@@ -90,9 +90,9 @@ fn abs_all(input: &amp;mut Cow&lt;[i32]&gt;) {
     }
 }</pre>
 </div><h2 class='variants'>Variants</h2>
-<table class='variants_table'><tr><td id='variant.Borrowed'><code>Borrowed</code></td><td><code>(&amp;'a B)</code></td></tr><tr><td>&nbsp;</td><td><div class='docblock'><p>Borrowed data.</p>
-</div></td><td></td></tr><tr><td id='variant.Owned'><code>Owned</code></td><td><code>(B::<a class='trait' href='../../std/borrow/trait.ToOwned.html' title='std::borrow::ToOwned'>Owned</a>)</code></td></tr><tr><td>&nbsp;</td><td><div class='docblock'><p>Owned data.</p>
-</div></td><td></td></tr></table><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbspB&gt; <a class='enum' href='../../std/borrow/enum.Cow.html' title='std::borrow::Cow'>Cow</a>&lt;'a,&nbsp;B&gt; <span class='where'>where B: <a class='trait' href='../../std/borrow/trait.ToOwned.html' title='std::borrow::ToOwned'>ToOwned</a> + ?<a class='trait' href='../../std/marker/trait.Sized.html' title='std::marker::Sized'>Sized</a></span></code></span><span class='out-of-band'></span></h3>
+<span id='variant.Borrowed'><code>Borrowed(&amp;'a B)</code></span><div class='docblock'><p>Borrowed data.</p>
+</div><span id='variant.Owned'><code>Owned(B::<a class='trait' href='../../std/borrow/trait.ToOwned.html' title='std::borrow::ToOwned'>Owned</a>)</code></span><div class='docblock'><p>Owned data.</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbspB&gt; <a class='enum' href='../../std/borrow/enum.Cow.html' title='std::borrow::Cow'>Cow</a>&lt;'a,&nbsp;B&gt; <span class='where'>where B: <a class='trait' href='../../std/borrow/trait.ToOwned.html' title='std::borrow::ToOwned'>ToOwned</a> + ?<a class='trait' href='../../std/marker/trait.Sized.html' title='std::marker::Sized'>Sized</a></span></code></span><span class='out-of-band'></span></h3>
 <div class='impl-items'><h4 id='method.to_mut' class='method'><code>fn <a href='#method.to_mut' class='fnname'>to_mut</a>(&amp;mut self) -&gt; &amp;mut B::<a class='trait' href='../../std/borrow/trait.ToOwned.html' title='std::borrow::ToOwned'>Owned</a></code></h4>
 <div class='docblock'><p>Acquires a mutable reference to the owned form of the data.</p>
 
