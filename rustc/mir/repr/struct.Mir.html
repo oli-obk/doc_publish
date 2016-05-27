@@ -59,8 +59,7 @@
     pub upvar_decls: <a class='struct' href='../../../collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../../../rustc/mir/repr/struct.UpvarDecl.html' title='rustc::mir::repr::UpvarDecl'>UpvarDecl</a>&gt;,
     pub span: <a class='struct' href='../../../syntax/codemap/struct.Span.html' title='syntax::codemap::Span'>Span</a>,
 }</pre><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><div class='docblock'><p>Lowered representation of a single function.</p>
-</div><h2 class='fields'>Fields</h2>
-<span id='structfield.basic_blocks'><code>basic_blocks: <a class='struct' href='../../../collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../../../rustc/mir/repr/struct.BasicBlockData.html' title='rustc::mir::repr::BasicBlockData'>BasicBlockData</a>&lt;'tcx&gt;&gt;</code></span>
+</div><h2 class='fields'>Fields</h2><span id='structfield.basic_blocks'><code>basic_blocks: <a class='struct' href='../../../collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../../../rustc/mir/repr/struct.BasicBlockData.html' title='rustc::mir::repr::BasicBlockData'>BasicBlockData</a>&lt;'tcx&gt;&gt;</code></span>
                            <span class='stab unstable'></span><div class='stability'><em class='stab unstable'>Unstable (<code>rustc_private</code>)</em></div><div class='docblock'><p>List of basic blocks. References to basic block use a newtyped index type <code>BasicBlock</code>
 that indexes into this vector.</p>
 </div><span id='structfield.scopes'><code>scopes: <a class='struct' href='../../../collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../../../rustc/mir/repr/struct.ScopeData.html' title='rustc::mir::repr::ScopeData'>ScopeData</a>&gt;</code></span>

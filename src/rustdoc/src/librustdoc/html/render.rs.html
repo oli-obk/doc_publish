@@ -5142,7 +5142,7 @@
     }).<span class='ident'>peekable</span>();
     <span class='kw'>if</span> <span class='kw'>let</span> <span class='ident'>doctree</span>::<span class='ident'>Plain</span> <span class='op'>=</span> <span class='ident'>s</span>.<span class='ident'>struct_type</span> {
         <span class='kw'>if</span> <span class='ident'>fields</span>.<span class='ident'>peek</span>().<span class='ident'>is_some</span>() {
-            <span class='macro'>write</span><span class='macro'>!</span>(<span class='ident'>w</span>, <span class='string'>&quot;&lt;h2 class=&#39;fields&#39;&gt;Fields&lt;/h2&gt;\n&quot;</span>)?;
+            <span class='macro'>write</span><span class='macro'>!</span>(<span class='ident'>w</span>, <span class='string'>&quot;&lt;h2 class=&#39;fields&#39;&gt;Fields&lt;/h2&gt;&quot;</span>)?;
             <span class='kw'>for</span> (<span class='ident'>field</span>, <span class='ident'>ty</span>) <span class='kw'>in</span> <span class='ident'>fields</span> {
                 <span class='macro'>write</span><span class='macro'>!</span>(<span class='ident'>w</span>, <span class='string'>&quot;&lt;span id=&#39;{shortty}.{name}&#39;&gt;&lt;code&gt;{name}: {ty}&lt;/code&gt;&lt;/span&gt;
                            &lt;span class=&#39;stab {stab}&#39;&gt;&lt;/span&gt;&quot;</span>,

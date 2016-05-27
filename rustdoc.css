@@ -269,21 +269,6 @@ nav.sub {
     margin-left: 24px;
 }
 
-.enum > .toggle-wrapper > .collapse-toggle, .struct > .toggle-wrapper > .collapse-toggle {
-    left: 0;
-    margin-top: 5px;
-}
-
-.enum > .toggle-wrapper + .docblock, .struct > .toggle-wrapper + .docblock {
-    margin-left: 30px;
-    margin-bottom: 20px;
-    margin-top: 5px;
-}
-
-.enum > .collapsed, .struct > .collapsed {
-    margin-bottom: 25px;
-}
-
 .content .out-of-band {
     font-size: 23px;
     margin: 0px;
@@ -610,11 +595,13 @@ a.test-arrow {
 .collapse-toggle {
     font-weight: 300;
     position: absolute;
+    left: -23px;
     color: #999;
     top: 0;
 }
 
 .toggle-wrapper > .collapse-toggle {
+    left: -24px;
     margin-top: 0px;
 }
 
@@ -655,6 +642,21 @@ span.since {
     position: initial;
     font-size: 20px;
     margin-right: 5px;
+}
+
+.enum > .toggle-wrapper > .collapse-toggle, .struct > .toggle-wrapper > .collapse-toggle {
+    left: 0;
+    margin-top: 5px;
+}
+
+.enum > .toggle-wrapper + .docblock, .struct > .toggle-wrapper + .docblock {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.enum > .collapsed, .struct > .collapsed {
+    margin-bottom: 25px;
 }
 
 :target > code {
